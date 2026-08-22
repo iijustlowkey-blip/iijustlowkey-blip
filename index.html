@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            /* Matches the blue-to-purple-to-pink gradient from your screenshot */
+            background: linear-gradient(135deg, #120835, #7a329c, #f4a2c4);
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top-Left Logo Styling */
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo-container img {
+            width: 45px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        /* Main Content Container */
+        .content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-style: italic;
+            font-weight: 500;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        /* Create/Login Account Button */
+        .cta-btn {
+            background: linear-gradient(to bottom, #4cd964, #28a745);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: 2px solid #218838;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background: linear-gradient(to bottom, #5eee75, #2ecc71);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Left Logo -->
+    <div class="logo-container">
+        <!-- Make sure to name your logo image file "RGBUNNYEARS ARE RabbitGames.png" or update the src below -->
+        <img src="RGBUNNYEARS ARE RabbitGames.png" alt="Logo">
+    </div>
+
+    <!-- Main Text and Button Section -->
+    <div class="content">
+        <h1>RABBIT</h1>
+        <h2>GAMES</h2>
+        <a href="#" class="cta-btn">Create Account Or Login Into Account</a>
+    </div>
+
+</body>
+</html>
