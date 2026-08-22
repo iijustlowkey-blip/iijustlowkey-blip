@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit Games - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Matches the purple-to-light blue/cyan gradient from the login screenshot */
+            background: linear-gradient(135deg, #7d52ef, #5ccce6);
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 8%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Title */
+        .login-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Form Layout */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #000000;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* Custom Banner-style Input Field */
+        .banner-input {
+            position: relative;
+            background: #ffffff;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            /* Creates the angled flag/banner cut on the right side */
+            clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+            padding-left: 15px;
+            padding-right: 30px;
+        }
+
+        .banner-input input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .banner-input input::placeholder {
+            color: #333333;
+            font-size: 1.05rem;
+        }
+
+        /* Thick Black Outlined Action Buttons */
+        .btn-outline {
+            background: #ffffff;
+            color: #000000;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 12px 30px;
+            border: 4px solid #000000;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 0px #000000;
+            transition: transform 0.1s ease;
+        }
+
+        .btn-outline:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0px #000000;
+        }
+
+        /* Login Button Styling */
+        .login-btn {
+            width: 200px;
+            margin-top: 5px;
+        }
+
+        /* Bottom-Right Utility Buttons Container */
+        .bottom-right-buttons {
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .side-btn {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title -->
+    <h1 class="login-title">RABBIT GAMES LOGIN</h1>
+
+    <!-- Login Form -->
+    <form action="#" method="POST">
+        
+        <!-- Username Field -->
+        <div class="input-group">
+            <label for="username">USERNAME</label>
+            <div class="banner-input">
+                <input type="text" id="username" name="username" placeholder="ex:BobbyLovesGames" required>
+            </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="input-group">
+            <label for="password">PASSWORD</label>
+            <div class="banner-input">
+                <input type="password" id="password" name="password" placeholder="ex:BobbySercetPassword" required>
+            </div>
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit" class="btn-outline login-btn">LOGIN</button>
+    </form>
+
+    <!-- Bottom Right Action Buttons -->
+    <div class="bottom-right-buttons">
+        <a href="#" class="btn-outline side-btn">Forget Password</a>
+        <a href="#" class="btn-outline side-btn">CREATE ACCOUNT</a>
+    </div>
+
+</body>
+</html>
